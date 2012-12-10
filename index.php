@@ -26,9 +26,9 @@
  */
 define('APP_DIR', 'app');
 define('DS', DIRECTORY_SEPARATOR);
-define('ROOT', dirname(__FILE__));
-define('WEBROOT_DIR', 'webroot');
-define('WWW_ROOT', ROOT . DS . APP_DIR . DS . WEBROOT_DIR . DS);
+define('ROOT', dirname(dirname(__FILE__)));
+define('WEBROOT_DIR', 'httpd');
+define('WWW_ROOT', dirname(__FILE__) . DS);
 
 /**
  * This only needs to be changed if the "cake" directory is located

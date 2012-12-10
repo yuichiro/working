@@ -74,7 +74,7 @@ if (!defined('CAKE_CORE_INCLUDE_PATH')) {
 	if (function_exists('ini_set')) {
 		ini_set('include_path', ROOT . DS . 'lib' . PATH_SEPARATOR . ini_get('include_path'));
 	}
-	if (!include ('Cake' . DS . 'bootstrap.php')) {
+	if (!include (dirname(dirname(__FILE__)) . DS . 'lib' . DS . 'Cake' . DS . 'bootstrap.php')) {
 		$failed = true;
 	}
 } else {
